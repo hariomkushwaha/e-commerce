@@ -12,29 +12,34 @@ class Directory extends React.Component {
                 {
                 title:'hat',
                 imageUrl:'https://gringosabroad.com/wp-content/uploads/2010/07/panama_hats20090923_022.jpg',
-                id:1
+                id:1,
+                linkUrl:'hats'
                 },
                 {
                     title:'jackets',
                     imageUrl:'https://www.aasharley-davidson.com/img/shop/gm.png',
-                    id:2
+                    id:2,
+                    linkUrl:''
                 },
                 {
                     title:'sneakers',
                     imageUrl:'https://static.dezeen.com/uploads/2015/07/Converse-Chuck-Taylor-All-Star-II_dezeen_784_10.jpg',
-                    id:3
+                    id:3,
+                    linkUrl:''
                 },
                 {
                     title:'women',
                     imageUrl:'https://lh3.googleusercontent.com/proxy/fyhVf29aab6pkljrTj1_mH_tzlLasect8B-hrWAUvGy2pNOo904BFIwi1ZGg2qIBNKKyVi2j9Iderb6AaBwjS0z9e1Rz7uO0',
                     size:'large',
-                    id:4
+                    id:4,
+                    linkUrl:''
                 },
                 {
                     title:'men',
                     imageUrl:'https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/06/27/15/indybest-mens-ethical-clothing.jpg',
                     size:'large',
-                    id:5
+                    id:5,
+                    linkUrl:''
                 }
 
 
@@ -46,8 +51,8 @@ class Directory extends React.Component {
         return (
             <div className='directory-menu'>
                  {
-                  this.state.section.map(({ title,imageUrl,id ,size}) => (
-                      <MenuItem key={id} title={title} imageUrl={imageUrl} size={size}/>
+                  this.state.section.map(({id, ...otherSectionProp  }) => (
+                      <MenuItem key={id} {...otherSectionProp} />
                   ))
                 }
             </div>
