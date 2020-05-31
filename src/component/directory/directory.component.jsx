@@ -29,7 +29,7 @@ class Directory extends React.Component {
                 },
                 {
                     title:'women',
-                    imageUrl:'https://lh3.googleusercontent.com/proxy/fyhVf29aab6pkljrTj1_mH_tzlLasect8B-hrWAUvGy2pNOo904BFIwi1ZGg2qIBNKKyVi2j9Iderb6AaBwjS0z9e1Rz7uO0',
+                    imageUrl:'https://i.cbc.ca/1.4713184.1529440884!/fileImage/httpImage/image.png_gen/derivatives/16x9_780/petite.png',
                     size:'large',
                     id:4,
                     linkUrl:''
